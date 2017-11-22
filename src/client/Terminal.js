@@ -53,7 +53,6 @@ class Terminal {
         count.push(scannedItem)
       }
     }
-    // console.log(count)
     return count
   }
 }

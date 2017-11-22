@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint src/",
-    "test": "mocha --recursive --watch --require babel-core/register"
+    "test": "mocha --recursive --require babel-core/register"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
