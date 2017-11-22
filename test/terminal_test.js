@@ -18,6 +18,13 @@ describe('Terminal', () => {
     terminal.scan('A')
     terminal.scan('C')
     expect(terminal.total()).to.equal(5.25)
+
+    const terminalTwo = new Terminal(pricingInfo)
+    terminalTwo.scan('A')
+    terminalTwo.scan('B')
+    terminalTwo.scan('C')
+    terminalTwo.scan('D')
+    expect(terminalTwo.total()).to.equal(15.40)
   })
 
   it('total() should calculate total correctly with volume prices', () => {
@@ -40,13 +47,7 @@ describe('Terminal', () => {
     terminalTwo.scan('C')
     terminalTwo.scan('C')
     terminalTwo.scan('C')
-    expect(terminalTwo.total()).to.equal(7.25)
+    expect(terminalTwo.total()).to.equal(7.25) 
+  }) 
+}) 
 
-    const terminalThree = new Terminal(pricingInfo)
-    terminalThree.scan('A')
-    terminalThree.scan('B')
-    terminalThree.scan('C')
-    terminalThree.scan('D')
-    expect(terminalThree.total()).to.equal(15.40)
-  })
-})
