@@ -3,8 +3,6 @@ import Terminal from '../src/client/Terminal'
 import { product_data as pricingInfo } from '../src/product_data'
 
 should()
-chai.use(require('chai-like'));
-chai.use(require('chai-things'));
 
 describe('Terminal', () => {
   it('total() should be zero if product in not in list', () => {
