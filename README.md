@@ -2,13 +2,14 @@ Here's my implementation of the task outlined below.
 
 ### Install
 
+```sh
 $ git clone <url>
 $ cd to repo
 $ npm install
 $ yarn test
 # or 
 $ npm test
-
+```
 ----------------------------------------
 The Shopping Cart
 
